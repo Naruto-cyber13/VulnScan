@@ -136,7 +136,7 @@ VulnScan/
 
 ### 🔹 Scan History
 ```markdown
-![Scan History](screenshots/scan-history.png)
+![Scan History](screenshots/history.png)
 ```
 
 ---
@@ -171,7 +171,7 @@ npm run dev
 
 Frontend will run at:
 ```text
-http://localhost:5173
+http://localhost:3000
 ```
 
 ---
