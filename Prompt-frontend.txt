@@ -1,0 +1,348 @@
+Context for Copilot (IMPORTANT – READ FULLY):
+You are generating the frontend for a cybersecurity project called VulnScan Lite.
+The backend is already implemented and supports anonymous scans, scan history, and scan result retrieval.
+
+❌ There is NO authentication system
+❌ There are NO login or registration APIs
+❌ There are NO user accounts or JWT tokens
+
+The frontend must only implement what the backend actually supports, nothing extra.
+PROJECT OVERVIEW
+
+VulnScan Lite is a lightweight, on-demand web security health check tool designed for:
+
+Small website owners
+
+Bloggers
+
+Developers
+
+Students
+
+Non-technical users
+
+Users enter a website URL, start a scan, and receive a clear, non-intrusive security report.
+
+This tool performs passive security checks only and does not attempt exploitation or aggressive penetration testing.
+🎯 FRONTEND GOALS
+
+Simple
+
+Functional
+
+Clean
+
+Professional
+
+Industrial / cybersecurity-style UI
+
+No unnecessary complexity
+
+Fully integrated with backend APIs
+🧰 FRONTEND TECH STACK (STRICT – DO NOT DEVIATE)
+
+Use only:
+
+React (Vite)
+
+JavaScript (ES6+)
+
+Tailwind CSS
+
+Axios for API calls
+
+React Router
+
+🧱 REQUIRED PROJECT STRUCTURE
+src/
+ ├── api/
+ │    ├── axios.js            # Axios instance with baseURL
+ │    ├── scan.api.js         # Scan-related API calls
+ │
+ ├── components/
+ │    ├── Navbar.jsx
+ │    ├── Footer.jsx
+ │    ├── ScanForm.jsx
+ │    ├── ScanProgress.jsx
+ │    ├── ScanResultCard.jsx
+ │    ├── VulnerabilityItem.jsx
+ │    ├── Disclaimer.jsx
+ │
+ ├── pages/
+ │    ├── Home.jsx
+ │    ├── ScanResult.jsx
+ │    ├── ScanHistory.jsx
+ │    ├── Pricing.jsx
+ │    ├── NotFound.jsx
+ │
+ ├── utils/
+ │    ├── severityColor.js
+ │    ├── formatDate.js
+ │
+ ├── App.jsx
+ ├── main.jsx
+ └── index.css
+
+🚫 EXPLICITLY DO NOT ADD
+
+Do NOT generate any of the following:
+
+Login page
+
+Register page
+
+AuthContext
+
+JWT handling
+
+Protected routes
+
+User dashboard
+
+Subscription management logic
+
+Payment gateways
+
+Email notifications
+
+Background cron logic
+
+If it does not exist in the backend, do not invent it.
+
+🔎 SCAN FLOW (MUST MATCH BACKEND EXACTLY)
+Scan Start
+
+User enters a URL in a single input field
+
+URL is validated on frontend
+
+User clicks Start Scan
+
+Frontend sends:
+
+POST /api/scan
+
+
+Backend responds immediately with:
+
+scan_id
+
+status: pending
+Scan Progress
+
+Display a ScanProgress component
+
+Poll backend every few seconds:
+
+GET /api/scan/status/{scan_id}
+
+
+Show:
+
+Pending
+
+In Progress
+
+Completed
+
+Failed
+Scan Completion
+
+When status becomes completed:
+
+Fetch full result:
+
+GET /api/scan/{scan_id}
+
+
+Navigate to ScanResult page
+
+Render results in a report-card style layout
+🧪 VULNERABILITY DISPLAY REQUIREMENTS
+
+Each scan report must show:
+
+High-Level Summary
+
+Target URL
+
+Scan timestamp
+
+Overall risk level
+
+Security score (if backend provides it)
+
+Vulnerability Categories
+
+Render results clearly grouped:
+
+HTTP Header Analysis
+(CSP, X-Frame-Options, HSTS, etc.)
+
+Cookie Security Flags
+(Secure, HttpOnly)
+
+SSL / TLS Configuration
+(certificate validity, weak ciphers)
+
+CMS / Framework Detection
+(WordPress, Joomla, etc.)
+
+Outdated Software Indicators
+
+Each Vulnerability Must Display
+
+Title
+
+Severity (Low / Medium / High)
+
+Color-coded badge
+
+Description
+
+Why it matters
+
+Suggested remediation
+
+External reference link (if provided by backend)
+
+📜 SCAN HISTORY PAGE
+
+If backend supports scan history:
+
+Fetch from:
+
+GET /api/scan/history
+
+
+Display list/table of past scans
+
+Each item shows:
+
+Domain
+
+Date
+
+Risk level
+
+Status
+
+Clicking an item navigates to its ScanResult page
+
+💰 PRICING PAGE (INFORMATIONAL ONLY)
+
+Since no auth or payment logic exists yet:
+
+Create a static Pricing page
+
+Explain:
+
+Free scan (limited)
+
+Premium scan (conceptual)
+
+Pro subscription (conceptual)
+
+Clearly label pricing as planned / informational
+
+No checkout buttons
+
+No payment logic
+
+⚠️ DISCLAIMER (MANDATORY & VISIBLE)
+
+Create a reusable Disclaimer component and show it on:
+
+Home page
+
+Scan result page
+
+Text must clearly state:
+
+This tool performs passive, non-intrusive security checks only.
+It is not a substitute for professional penetration testing.
+Only scan websites that you own or have explicit permission to test.
+
+🎨 UI / STYLING GUIDELINES
+
+Style must feel:
+
+Industrial
+
+Cybersecurity-oriented
+
+Professional
+
+Design Rules
+
+Dark theme (slate / zinc / neutral)
+
+Subtle gradients
+
+Monospaced or clean fonts
+
+Rounded cards
+
+Clear spacing
+
+Minimal animations
+
+Responsive for mobile & desktop
+
+🌍 ENVIRONMENT CONFIGURATION
+
+Use .env:
+
+VITE_API_BASE_URL=http://localhost:8000/api
+
+
+Never hardcode backend URLs.
+
+🚀 FINAL OUTPUT EXPECTATIONS
+
+Generate:
+
+Fully functional React frontend
+
+Clean, readable, commented code
+
+No mock data
+
+No placeholders
+
+No unused features
+
+Direct backend integration
+
+Ready to run with npm run dev
+
+🧠 IMPORTANT CONTEXT
+
+This frontend is part of the same project conversation as the backend.
+Assume:
+
+Backend routes already exist
+
+Response structures are already defined
+
+Frontend must adapt to backend, not vice versa
+
+✅ OUTPUT INSTRUCTIONS
+
+Generate actual working code, not explanations.
+
+Start by generating:
+
+Vite + React setup
+
+Axios configuration
+
+Routing
+
+Core pages
+
+Scan workflow components
+
+Styling
+
+END OF PROMPT
