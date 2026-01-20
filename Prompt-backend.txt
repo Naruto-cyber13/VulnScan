@@ -1,0 +1,161 @@
+You are a senior backend engineer and security tooling architect.
+
+Build a COMPLETE, PRODUCTION-READY backend for a cybersecurity project called:
+
+PROJECT NAME:
+LogLens / VulnScan Lite
+
+PROJECT DESCRIPTION:
+LogLens / VulnScan Lite is a lightweight, on-demand security analysis platform designed for small businesses, blogs, and developers who want a quick security health check without intrusive penetration testing.
+
+The backend must support:
+1. Passive website security scanning
+2. Log file threat analysis
+3. REST API access for frontend integration
+4. Clear separation of free and premium capabilities (logic-level, no payment gateway)
+5. Resume-grade architecture and clean code
+
+-----------------------------------
+TECH STACK (MANDATORY)
+-----------------------------------
+- Language: Python 3.10+
+- Framework: FastAPI
+- ASGI Server: Uvicorn
+- Validation: Pydantic
+- HTTP Requests: requests or httpx
+- Database: SQLite (development-ready)
+- ORM: SQLAlchemy
+- Environment Variables: python-dotenv
+- Logging: Python logging module
+
+-----------------------------------
+PROJECT STRUCTURE (MUST MATCH EXACTLY)
+-----------------------------------
+backend/
+│
+├── app/
+│   ├── main.py                  # FastAPI entry point
+│   ├── config.py                # Environment & settings
+│   │
+│   ├── api/
+│   │   ├── routes.py             # API routes
+│   │
+│   ├── core/
+│   │   ├── scanner.py            # Core scan dispatcher
+│   │   ├── analyzer.py           # Threat analysis & scoring
+│   │
+│   ├── services/
+│   │   ├── url_scan.py           # Passive website scanning
+│   │   ├── log_scan.py           # Log file analysis
+│   │
+│   ├── models/
+│   │   ├── schemas.py            # Pydantic request/response models
+│   │   ├── database.py           # SQLAlchemy setup
+│   │   ├── tables.py             # Database models
+│   │
+│   ├── utils/
+│   │   ├── helpers.py            # Utility functions
+│   │
+│   └── logs/                     # Backend logs (auto-created)
+│
+├── requirements.txt
+└── README.md
+
+-----------------------------------
+CORE FUNCTIONAL REQUIREMENTS
+-----------------------------------
+
+1️⃣ WEBSITE (URL) SECURITY SCANNING – PASSIVE ONLY  
+- Endpoint: POST /scan/url
+- Accepts a URL as input
+- Perform ONLY passive checks (NO brute force, NO exploitation)
+- Checks must include:
+  - HTTPS usage
+  - Presence of common security headers
+    (CSP, X-Frame-Options, X-Content-Type-Options, HSTS)
+  - Server header exposure
+  - HTTP status validation
+- Return a structured JSON result
+- Assign a LOW / MEDIUM / HIGH risk score based on findings
+
+2️⃣ LOG FILE THREAT ANALYSIS  
+- Endpoint: POST /scan/log
+- Accepts raw log text or uploaded log file
+- Analyze logs using pattern matching (regex)
+- Detect:
+  - Brute-force attempts
+  - SQL injection indicators
+  - XSS attempts
+  - Suspicious IP repetition
+  - Authentication failures
+- Generate:
+  - Total log lines
+  - Total threats detected
+  - Threat breakdown by category
+  - Severity score (numerical + label)
+
+3️⃣ SCAN HISTORY STORAGE  
+- Store every scan result in SQLite
+- Fields:
+  - Scan ID
+  - Scan type (URL / LOG)
+  - Input target (URL or filename)
+  - Threat count
+  - Severity
+  - Timestamp
+- Endpoint: GET /scans/history
+
+4️⃣ FREE vs PREMIUM LOGIC (NO PAYMENT)
+- Free tier:
+  - Limited scan depth
+  - Limited threat details
+- Premium tier:
+  - Full threat breakdown
+  - Severity explanation
+- Tier should be controlled via request flag or header
+
+5️⃣ API & SYSTEM REQUIREMENTS
+- Proper request/response validation using Pydantic
+- Centralized error handling
+- Timeout protection for HTTP requests
+- Clean logging using Python logging
+- Swagger UI enabled at /docs
+- Meaningful HTTP status codes
+
+-----------------------------------
+NON-FUNCTIONAL REQUIREMENTS
+-----------------------------------
+- Clean, readable, commented code
+- Modular architecture (no monolithic files)
+- Extendable for future auth & deployment
+- No placeholder or pseudo-code
+- Everything must RUN
+
+-----------------------------------
+README.md REQUIREMENTS
+-----------------------------------
+Generate a README.md that includes:
+- Project overview
+- Features
+- Folder structure explanation
+- Setup instructions
+- Virtual environment setup
+- How to run backend
+- Example API requests
+- Free vs Premium explanation
+
+-----------------------------------
+requirements.txt
+-----------------------------------
+Generate a valid requirements.txt listing all required libraries.
+
+-----------------------------------
+FINAL INSTRUCTIONS
+-----------------------------------
+- Generate ALL files
+- Follow the structure exactly
+- Ensure code consistency across modules
+- Do NOT simplify the logic
+- Treat this as a real-world security backend
+
+BEGIN GENERATION NOW.
