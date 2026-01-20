@@ -120,22 +120,22 @@ VulnScan/
 > 📌 Add your screenshots inside a folder named `screenshots/` in the root directory.
 
 ### 🔹 Home Page
-```markdown
+```
 ![Home Page](screenshots/home.png)
 ```
 
 ### 🔹 URL Scan Feature
-```markdown
+```
 ![URL Scan](screenshots/url-scan.png)
 ```
 
 ### 🔹 Log Scan Feature
-```markdown
+```
 ![Log Scan](screenshots/log-scan.png)
 ```
 
 ### 🔹 Scan History
-```markdown
+```
 ![Scan History](screenshots/history.png)
 ```
 
