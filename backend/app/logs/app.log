@@ -1,0 +1,560 @@
+2026-01-17 12:54:02,928 - app.api.routes - INFO - URL scan request:  https://www.facebook.com/
+2026-01-17 12:54:02,929 - app.core.scanner - INFO - Initiating URL scan for https://www.facebook.com/ (Premium: False)
+2026-01-17 12:54:02,929 - app.services.url_scan - INFO - Starting passive scan for URL: https://www.facebook.com/
+2026-01-17 12:54:03,750 - httpx - INFO - HTTP Request: HEAD https://www.facebook.com/ "HTTP/1.1 200 OK"
+2026-01-17 12:54:03,760 - app.core.scanner - ERROR - Failed to store scan:  (builtins.TypeError) Object of type datetime is not JSON serializable
+[SQL: INSERT INTO scan_records (id, scan_type, target, premium, threat_count, severity, severity_score, scan_results, created_at, scanned_at, user_ip) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: [{'premium': False, 'scan_type': 'URL', 'severity': 'LOW', 'scanned_at': datetime.datetime(2026, 1, 17, 7, 24, 3, 756439), 'threat_count': 0, 'severity ... (2955 characters truncated) ... W', 'severity_score': 0.0, 'findings': [], 'premium_insights': None, 'scanned_at': datetime.datetime(2026, 1, 17, 7, 24, 3, 756377)}, 'user_ip': None}]]
+2026-01-17 12:54:03,761 - app.core.scanner - INFO - URL scan completed:  scan_7c7322ee8ef9 - Severity: LOW
+2026-01-17 12:57:10,379 - app.api.routes - INFO - URL scan request:  https://www.google.com/
+2026-01-17 12:57:10,381 - app.core.scanner - INFO - Initiating URL scan for https://www.google.com/ (Premium: True)
+2026-01-17 12:57:10,382 - app.services.url_scan - INFO - Starting passive scan for URL: https://www.google.com/
+2026-01-17 12:57:11,125 - httpx - INFO - HTTP Request: HEAD https://www.google.com/ "HTTP/1.1 200 OK"
+2026-01-17 12:57:11,132 - app.core.scanner - ERROR - Failed to store scan:  (builtins.TypeError) Object of type datetime is not JSON serializable
+[SQL: INSERT INTO scan_records (id, scan_type, target, premium, threat_count, severity, severity_score, scan_results, created_at, scanned_at, user_ip) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: [{'premium': True, 'scan_type': 'URL', 'severity': 'MEDIUM', 'scanned_at': datetime.datetime(2026, 1, 17, 7, 27, 11, 126333), 'threat_count': 4, 'sever ... (1223 characters truncated) ... e to attackers. Consider disabling or masking the Server header.'], 'scanned_at': datetime.datetime(2026, 1, 17, 7, 27, 11, 126279)}, 'user_ip': None}]]
+2026-01-17 12:57:11,132 - app.core.scanner - INFO - URL scan completed:  scan_6132b96c72ee - Severity: MEDIUM
+2026-01-17 13:00:17,793 - app.api.routes - INFO - URL scan request:  https://www.google.com/
+2026-01-17 13:00:17,793 - app.core.scanner - INFO - Initiating URL scan for https://www.google.com/ (Premium: False)
+2026-01-17 13:00:17,793 - app.services.url_scan - INFO - Starting passive scan for URL: https://www.google.com/
+2026-01-17 13:00:18,561 - httpx - INFO - HTTP Request: HEAD https://www.google.com/ "HTTP/1.1 200 OK"
+2026-01-17 13:00:18,563 - app.core.scanner - ERROR - Failed to store scan:  (builtins.TypeError) Object of type datetime is not JSON serializable
+[SQL: INSERT INTO scan_records (id, scan_type, target, premium, threat_count, severity, severity_score, scan_results, created_at, scanned_at, user_ip) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: [{'premium': False, 'scan_type': 'URL', 'severity': 'MEDIUM', 'scanned_at': datetime.datetime(2026, 1, 17, 7, 30, 18, 562810), 'threat_count': 4, 'seve ... (1011 characters truncated) ... 'Strict-Transport-Security' is not set"], 'premium_insights': None, 'scanned_at': datetime.datetime(2026, 1, 17, 7, 30, 18, 562782)}, 'user_ip': None}]]
+2026-01-17 13:00:18,563 - app.core.scanner - INFO - URL scan completed:  scan_cc04cff1a902 - Severity: MEDIUM
+2026-01-17 19:05:16,682 - app.api.routes - INFO - URL scan request:  https://www.google.com/
+2026-01-17 19:05:16,682 - app.core.scanner - INFO - Initiating URL scan for https://www.google.com/ (Premium: False)
+2026-01-17 19:05:16,683 - app.services.url_scan - INFO - Starting passive scan for URL: https://www.google.com/
+2026-01-17 19:05:17,381 - httpx - INFO - HTTP Request: HEAD https://www.google.com/ "HTTP/1.1 200 OK"
+2026-01-17 19:05:17,391 - app.core.scanner - ERROR - Failed to store scan:  (builtins.TypeError) Object of type datetime is not JSON serializable
+[SQL: INSERT INTO scan_records (id, scan_type, target, premium, threat_count, severity, severity_score, scan_results, created_at, scanned_at, user_ip) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: [{'id': 'scan_46128338ce55', 'target': 'https://www.google.com/', 'severity_score': 4.0, 'severity': 'MEDIUM', 'scan_results': {'scan_id': 'scan_461283 ... (1013 characters truncated) ...  383141)}, 'premium': False, 'scanned_at': datetime.datetime(2026, 1, 17, 13, 35, 17, 383185), 'threat_count': 4, 'scan_type': 'URL', 'user_ip': None}]]
+2026-01-17 19:05:17,392 - app.core.scanner - INFO - URL scan completed:  scan_46128338ce55 - Severity: MEDIUM
+2026-01-17 19:05:17,394 - app.api.routes - ERROR - Scan error: (builtins.TypeError) Object of type datetime is not JSON serializable
+[SQL: INSERT INTO scan_records (id, scan_type, target, premium, threat_count, severity, severity_score, scan_results, created_at, scanned_at, user_ip) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: [{'target': 'https://www.google.com/', 'severity_score': 4.0, 'severity': 'MEDIUM', 'user_ip': '127.0.0.1', 'scan_results': {'scan_id': 'scan_46128338c ... (1123 characters truncated) ... plement recommendations.'}, 'premium': False, 'scanned_at': datetime.datetime(2026, 1, 17, 13, 35, 17, 383141), 'threat_count': 4, 'scan_type': 'URL'}]]
+Traceback (most recent call last):
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\engine\base.py", line 1812, in _execute_context
+    context = constructor(
+        dialect, self, conn, execution_options, *args, **kw
+    )
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\engine\default.py", line 1477, in _init_compiled
+    flattened_processors[key](compiled_params[key])
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\sql\sqltypes.py", line 2747, in process
+    return json_serializer(value)
+  File "C:\Users\Debargha\anaconda3\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Debargha\anaconda3\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\Debargha\anaconda3\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\Debargha\anaconda3\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type datetime is not JSON serializable
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Debargha\Desktop\VulnScan\backend\app\api\routes.py", line 68, in scan_url
+    db.commit()
+    ~~~~~~~~~^^
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\orm\session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\orm\session.py", line 1313, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\orm\session.py", line 1288, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\orm\session.py", line 4353, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\orm\session.py", line 4488, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\orm\session.py", line 4449, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+        statement,
+        params,
+        execution_options=execution_options,
+    )
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\engine\base.py", line 1416, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\sql\elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\engine\base.py", line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\engine\base.py", line 1818, in _execute_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str(statement), parameters, None, None
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\engine\base.py", line 2352, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\engine\base.py", line 1812, in _execute_context
+    context = constructor(
+        dialect, self, conn, execution_options, *args, **kw
+    )
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\engine\default.py", line 1477, in _init_compiled
+    flattened_processors[key](compiled_params[key])
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\sql\sqltypes.py", line 2747, in process
+    return json_serializer(value)
+  File "C:\Users\Debargha\anaconda3\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Debargha\anaconda3\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\Debargha\anaconda3\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\Debargha\anaconda3\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+sqlalchemy.exc.StatementError: (builtins.TypeError) Object of type datetime is not JSON serializable
+[SQL: INSERT INTO scan_records (id, scan_type, target, premium, threat_count, severity, severity_score, scan_results, created_at, scanned_at, user_ip) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: [{'target': 'https://www.google.com/', 'severity_score': 4.0, 'severity': 'MEDIUM', 'user_ip': '127.0.0.1', 'scan_results': {'scan_id': 'scan_46128338c ... (1123 characters truncated) ... plement recommendations.'}, 'premium': False, 'scanned_at': datetime.datetime(2026, 1, 17, 13, 35, 17, 383141), 'threat_count': 4, 'scan_type': 'URL'}]]
+2026-01-17 19:11:42,831 - app.api.routes - INFO - URL scan request:  https://www.google.com/
+2026-01-17 19:11:42,832 - app.core.scanner - INFO - Initiating URL scan for https://www.google.com/ (Premium: False)
+2026-01-17 19:11:42,832 - app.services.url_scan - INFO - Starting passive scan for URL: https://www.google.com/
+2026-01-17 19:11:43,582 - httpx - INFO - HTTP Request: HEAD https://www.google.com/ "HTTP/1.1 200 OK"
+2026-01-17 19:11:43,585 - app.core.scanner - ERROR - Failed to store scan:  (builtins.TypeError) Object of type datetime is not JSON serializable
+[SQL: INSERT INTO scan_records (id, scan_type, target, premium, threat_count, severity, severity_score, scan_results, created_at, scanned_at, user_ip) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: [{'scan_results': {'scan_id': 'scan_66093fb93445', 'target_url': 'https://www.google.com/', 'https_enabled': True, 'status_code': 200, 'server_info': ' ... (1013 characters truncated) ... unt': 4, 'id': 'scan_66093fb93445', 'severity_score': 4.0, 'premium': False, 'scan_type': 'URL', 'target': 'https://www.google.com/', 'user_ip': None}]]
+2026-01-17 19:11:43,585 - app.core.scanner - INFO - URL scan completed:  scan_66093fb93445 - Severity: MEDIUM
+2026-01-17 19:11:43,587 - app.api.routes - ERROR - Scan error: (builtins.TypeError) SQLite DateTime type only accepts Python datetime and date objects as input.
+[SQL: INSERT INTO scan_records (id, scan_type, target, premium, threat_count, severity, severity_score, scan_results, created_at, scanned_at, user_ip) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: [{'scan_results': {'scan_id': 'scan_66093fb93445', 'target_url': 'https://www.google.com/', 'https_enabled': True, 'status_code': 200, 'server_info': ' ... (1079 characters truncated) ... .583077', 'threat_count': 4, 'severity_score': 4.0, 'premium': False, 'user_ip': '127.0.0.1', 'scan_type': 'URL', 'target': 'https://www.google.com/'}]]
+Traceback (most recent call last):
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\engine\base.py", line 1812, in _execute_context
+    context = constructor(
+        dialect, self, conn, execution_options, *args, **kw
+    )
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\engine\default.py", line 1477, in _init_compiled
+    flattened_processors[key](compiled_params[key])
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\dialects\sqlite\base.py", line 1116, in process
+    raise TypeError(
+    ...<2 lines>...
+    )
+TypeError: SQLite DateTime type only accepts Python datetime and date objects as input.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Debargha\Desktop\VulnScan\backend\app\api\routes.py", line 72, in scan_url
+    db.commit()
+    ~~~~~~~~~^^
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\orm\session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\orm\session.py", line 1313, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\orm\session.py", line 1288, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\orm\session.py", line 4353, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\orm\session.py", line 4488, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\orm\session.py", line 4449, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+        statement,
+        params,
+        execution_options=execution_options,
+    )
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\engine\base.py", line 1416, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\sql\elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\engine\base.py", line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\engine\base.py", line 1818, in _execute_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str(statement), parameters, None, None
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\engine\base.py", line 2352, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\engine\base.py", line 1812, in _execute_context
+    context = constructor(
+        dialect, self, conn, execution_options, *args, **kw
+    )
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\engine\default.py", line 1477, in _init_compiled
+    flattened_processors[key](compiled_params[key])
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\dialects\sqlite\base.py", line 1116, in process
+    raise TypeError(
+    ...<2 lines>...
+    )
+sqlalchemy.exc.StatementError: (builtins.TypeError) SQLite DateTime type only accepts Python datetime and date objects as input.
+[SQL: INSERT INTO scan_records (id, scan_type, target, premium, threat_count, severity, severity_score, scan_results, created_at, scanned_at, user_ip) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: [{'scan_results': {'scan_id': 'scan_66093fb93445', 'target_url': 'https://www.google.com/', 'https_enabled': True, 'status_code': 200, 'server_info': ' ... (1079 characters truncated) ... .583077', 'threat_count': 4, 'severity_score': 4.0, 'premium': False, 'user_ip': '127.0.0.1', 'scan_type': 'URL', 'target': 'https://www.google.com/'}]]
+2026-01-17 19:12:25,602 - app.api.routes - INFO - URL scan request:  https://www.google.com/
+2026-01-17 19:12:25,602 - app.core.scanner - INFO - Initiating URL scan for https://www.google.com/ (Premium: False)
+2026-01-17 19:12:25,602 - app.services.url_scan - INFO - Starting passive scan for URL: https://www.google.com/
+2026-01-17 19:12:26,250 - httpx - INFO - HTTP Request: HEAD https://www.google.com/ "HTTP/1.1 200 OK"
+2026-01-17 19:12:26,253 - app.core.scanner - ERROR - Failed to store scan:  (builtins.TypeError) Object of type datetime is not JSON serializable
+[SQL: INSERT INTO scan_records (id, scan_type, target, premium, threat_count, severity, severity_score, scan_results, created_at, scanned_at, user_ip) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: [{'scan_results': {'scan_id': 'scan_eb0ae69bbd44', 'target_url': 'https://www.google.com/', 'https_enabled': True, 'status_code': 200, 'server_info': ' ... (1013 characters truncated) ... M', 'id': 'scan_eb0ae69bbd44', 'premium': False, 'scanned_at': datetime.datetime(2026, 1, 17, 13, 42, 26, 251352), 'threat_count': 4, 'user_ip': None}]]
+2026-01-17 19:12:26,254 - app.core.scanner - INFO - URL scan completed:  scan_eb0ae69bbd44 - Severity: MEDIUM
+2026-01-17 19:12:26,254 - app.api.routes - ERROR - Scan error: (builtins.TypeError) SQLite DateTime type only accepts Python datetime and date objects as input.
+[SQL: INSERT INTO scan_records (id, scan_type, target, premium, threat_count, severity, severity_score, scan_results, created_at, scanned_at, user_ip) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: [{'scan_results': {'scan_id': 'scan_eb0ae69bbd44', 'target_url': 'https://www.google.com/', 'https_enabled': True, 'status_code': 200, 'server_info': ' ... (1079 characters truncated) ... e': 'URL', 'target': 'https://www.google.com/', 'severity': 'MEDIUM', 'scanned_at': '2026-01-17T13:42:26.251324', 'premium': False, 'threat_count': 4}]]
+Traceback (most recent call last):
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\engine\base.py", line 1812, in _execute_context
+    context = constructor(
+        dialect, self, conn, execution_options, *args, **kw
+    )
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\engine\default.py", line 1477, in _init_compiled
+    flattened_processors[key](compiled_params[key])
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\dialects\sqlite\base.py", line 1116, in process
+    raise TypeError(
+    ...<2 lines>...
+    )
+TypeError: SQLite DateTime type only accepts Python datetime and date objects as input.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Debargha\Desktop\VulnScan\backend\app\api\routes.py", line 72, in scan_url
+    db.commit()
+    ~~~~~~~~~^^
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\orm\session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\orm\session.py", line 1313, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\orm\session.py", line 1288, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\orm\session.py", line 4353, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\orm\session.py", line 4488, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\orm\session.py", line 4449, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+        statement,
+        params,
+        execution_options=execution_options,
+    )
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\engine\base.py", line 1416, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\sql\elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\engine\base.py", line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\engine\base.py", line 1818, in _execute_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str(statement), parameters, None, None
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\engine\base.py", line 2352, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\engine\base.py", line 1812, in _execute_context
+    context = constructor(
+        dialect, self, conn, execution_options, *args, **kw
+    )
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\engine\default.py", line 1477, in _init_compiled
+    flattened_processors[key](compiled_params[key])
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Debargha\anaconda3\Lib\site-packages\sqlalchemy\dialects\sqlite\base.py", line 1116, in process
+    raise TypeError(
+    ...<2 lines>...
+    )
+sqlalchemy.exc.StatementError: (builtins.TypeError) SQLite DateTime type only accepts Python datetime and date objects as input.
+[SQL: INSERT INTO scan_records (id, scan_type, target, premium, threat_count, severity, severity_score, scan_results, created_at, scanned_at, user_ip) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: [{'scan_results': {'scan_id': 'scan_eb0ae69bbd44', 'target_url': 'https://www.google.com/', 'https_enabled': True, 'status_code': 200, 'server_info': ' ... (1079 characters truncated) ... e': 'URL', 'target': 'https://www.google.com/', 'severity': 'MEDIUM', 'scanned_at': '2026-01-17T13:42:26.251324', 'premium': False, 'threat_count': 4}]]
+2026-01-17 19:15:11,179 - app.api.routes - INFO - URL scan request:  https://www.google.com/
+2026-01-17 19:15:11,179 - app.core.scanner - INFO - Initiating URL scan for https://www.google.com/ (Premium: False)
+2026-01-17 19:15:11,180 - app.services.url_scan - INFO - Starting passive scan for URL: https://www.google.com/
+2026-01-17 19:15:11,954 - httpx - INFO - HTTP Request: HEAD https://www.google.com/ "HTTP/1.1 200 OK"
+2026-01-17 19:15:11,958 - app.core.scanner - ERROR - Failed to store scan:  (builtins.TypeError) Object of type datetime is not JSON serializable
+[SQL: INSERT INTO scan_records (id, scan_type, target, premium, threat_count, severity, severity_score, scan_results, created_at, scanned_at, user_ip) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: [{'id': 'scan_81a11d768953', 'severity': 'MEDIUM', 'threat_count': 4, 'target': 'https://www.google.com/', 'premium': False, 'scan_results': {'scan_id' ... (1013 characters truncated) ... 7, 13, 45, 11, 955527)}, 'severity_score': 4.0, 'scanned_at': datetime.datetime(2026, 1, 17, 13, 45, 11, 955557), 'scan_type': 'URL', 'user_ip': None}]]
+2026-01-17 19:15:11,958 - app.core.scanner - INFO - URL scan completed:  scan_81a11d768953 - Severity: MEDIUM
+2026-01-17 19:15:11,974 - app.api.routes - ERROR - Scan error: 'str' object has no attribute 'isoformat'
+Traceback (most recent call last):
+  File "C:\Users\Debargha\Desktop\VulnScan\backend\app\api\routes.py", line 76, in scan_url
+    result["scanned_at"] = result["scanned_at"].isoformat()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'isoformat'. Did you mean: 'format'?
+2026-01-17 19:23:41,864 - app.api.routes - INFO - URL scan request:  https://www.google.com/
+2026-01-17 19:23:41,864 - app.core.scanner - INFO - Initiating URL scan for https://www.google.com/ (Premium: False)
+2026-01-17 19:23:41,864 - app.services.url_scan - INFO - Starting passive scan for URL: https://www.google.com/
+2026-01-17 19:23:42,546 - httpx - INFO - HTTP Request: HEAD https://www.google.com/ "HTTP/1.1 200 OK"
+2026-01-17 19:23:42,550 - app.core.scanner - ERROR - Failed to store scan:  (builtins.TypeError) Object of type datetime is not JSON serializable
+[SQL: INSERT INTO scan_records (id, scan_type, target, premium, threat_count, severity, severity_score, scan_results, created_at, scanned_at, user_ip) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: [{'id': 'scan_d45fce22dd57', 'scan_results': {'scan_id': 'scan_d45fce22dd57', 'target_url': 'https://www.google.com/', 'https_enabled': True, 'status_c ... (1013 characters truncated) ... ype': 'URL', 'scanned_at': datetime.datetime(2026, 1, 17, 13, 53, 42, 547477), 'premium': False, 'target': 'https://www.google.com/', 'user_ip': None}]]
+2026-01-17 19:23:42,550 - app.core.scanner - INFO - URL scan completed:  scan_d45fce22dd57 - Severity: MEDIUM
+2026-01-17 19:24:12,810 - app.api.routes - INFO - URL scan request:  https://www.google.com/
+2026-01-17 19:24:12,810 - app.core.scanner - INFO - Initiating URL scan for https://www.google.com/ (Premium: True)
+2026-01-17 19:24:12,810 - app.services.url_scan - INFO - Starting passive scan for URL: https://www.google.com/
+2026-01-17 19:24:13,461 - httpx - INFO - HTTP Request: HEAD https://www.google.com/ "HTTP/1.1 200 OK"
+2026-01-17 19:24:13,462 - app.core.scanner - ERROR - Failed to store scan:  (builtins.TypeError) Object of type datetime is not JSON serializable
+[SQL: INSERT INTO scan_records (id, scan_type, target, premium, threat_count, severity, severity_score, scan_results, created_at, scanned_at, user_ip) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: [{'id': 'scan_153d8362a0f2', 'scan_results': {'scan_id': 'scan_153d8362a0f2', 'target_url': 'https://www.google.com/', 'https_enabled': True, 'status_c ... (1225 characters truncated) ... type': 'URL', 'scanned_at': datetime.datetime(2026, 1, 17, 13, 54, 13, 462206), 'premium': True, 'target': 'https://www.google.com/', 'user_ip': None}]]
+2026-01-17 19:24:13,463 - app.core.scanner - INFO - URL scan completed:  scan_153d8362a0f2 - Severity: MEDIUM
+2026-01-17 19:31:04,885 - app.api.routes - INFO - Log scan request: access.log
+2026-01-17 19:31:04,885 - app.core.scanner - INFO - Initiating log scan for access.log (Premium: False)
+2026-01-17 19:31:04,885 - app.services.log_scan - INFO - Starting log analysis for access.log
+2026-01-17 19:31:04,885 - app.services.log_scan - INFO - Processing 1 log lines from access.log
+2026-01-17 19:31:04,886 - app.core.scanner - ERROR - Failed to store scan:  (builtins.TypeError) Object of type datetime is not JSON serializable
+[SQL: INSERT INTO scan_records (id, scan_type, target, premium, threat_count, severity, severity_score, scan_results, created_at, scanned_at, user_ip) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: [{'id': 'scan_ee80876633e5', 'scan_results': {'scan_id': 'scan_ee80876633e5', 'filename': 'access.log', 'total_lines': 1, 'threat_count': 0, 'severity' ... (321 characters truncated) ...  'LOW', 'scan_type': 'LOG', 'scanned_at': datetime.datetime(2026, 1, 17, 14, 1, 4, 886100), 'premium': False, 'target': 'access.log', 'user_ip': None}]]
+2026-01-17 19:31:04,886 - app.core.scanner - INFO - Log scan completed: scan_ee80876633e5 - Threats: 0
+2026-01-17 22:26:50,919 - app.api.routes - INFO - Log scan request: access. log
+2026-01-17 22:26:50,919 - app.core.scanner - INFO - Initiating log scan for access. log (Premium: False)
+2026-01-17 22:26:50,920 - app.services.log_scan - INFO - Starting log analysis for access. log
+2026-01-17 22:26:50,920 - app.services.log_scan - INFO - Processing 1 log lines from access. log
+2026-01-17 22:26:50,923 - app.core.scanner - ERROR - Failed to store scan:  (builtins.TypeError) Object of type datetime is not JSON serializable
+[SQL: INSERT INTO scan_records (id, scan_type, target, premium, threat_count, severity, severity_score, scan_results, created_at, scanned_at, user_ip) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: [{'id': 'scan_30ca8260232d', 'scan_results': {'scan_id': 'scan_30ca8260232d', 'filename': 'access. log', 'total_lines': 1, 'threat_count': 0, 'severity ... (327 characters truncated) ... nt': 0, 'premium': False, 'severity_score': 0.0, 'severity': 'LOW', 'scanned_at': datetime.datetime(2026, 1, 17, 16, 56, 50, 920491), 'user_ip': None}]]
+2026-01-17 22:26:50,923 - app.core.scanner - INFO - Log scan completed: scan_30ca8260232d - Threats: 0
+2026-01-17 22:38:39,064 - app.api.routes - INFO - Log scan request: access. log
+2026-01-17 22:38:39,065 - app.core.scanner - INFO - Initiating log scan for access. log (Premium: False)
+2026-01-17 22:38:39,065 - app.services.log_scan - INFO - Starting log analysis for access. log
+2026-01-17 22:38:39,065 - app.services.log_scan - INFO - Processing 1 log lines from access. log
+2026-01-17 22:38:39,069 - app.core.scanner - ERROR - Failed to store scan:  (builtins.TypeError) Object of type datetime is not JSON serializable
+[SQL: INSERT INTO scan_records (id, scan_type, target, premium, threat_count, severity, severity_score, scan_results, created_at, scanned_at, user_ip) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: [{'severity_score': 0.0, 'threat_count': 0, 'scanned_at': datetime.datetime(2026, 1, 17, 17, 8, 39, 66380), 'target': 'access. log', 'scan_type': 'LOG' ... (323 characters truncated) ... .'], 'scanned_at': datetime.datetime(2026, 1, 17, 17, 8, 39, 66347)}, 'premium': False, 'severity': 'LOW', 'id': 'scan_3c503412b994', 'user_ip': None}]]
+2026-01-17 22:38:39,069 - app.core.scanner - INFO - Log scan completed: scan_3c503412b994 - Threats: 0
+2026-01-18 12:32:26,975 - app.api.routes - INFO - URL scan request:  https://www.tryhackme.com/
+2026-01-18 12:32:26,976 - app.core.scanner - INFO - Initiating URL scan for https://www.tryhackme.com/ (Premium: True)
+2026-01-18 12:32:26,976 - app.services.url_scan - INFO - Starting passive scan for URL: https://www.tryhackme.com/
+2026-01-18 12:32:27,583 - httpx - INFO - HTTP Request: HEAD https://www.tryhackme.com/ "HTTP/1.1 301 Moved Permanently"
+2026-01-18 12:32:28,517 - httpx - INFO - HTTP Request: HEAD https://tryhackme.com/ "HTTP/1.1 200 OK"
+2026-01-18 12:32:28,525 - app.core.scanner - ERROR - Failed to store scan:  (builtins.TypeError) Object of type datetime is not JSON serializable
+[SQL: INSERT INTO scan_records (id, scan_type, target, premium, threat_count, severity, severity_score, scan_results, created_at, scanned_at, user_ip) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: [{'scanned_at': datetime.datetime(2026, 1, 18, 7, 2, 28, 520577), 'severity': 'MEDIUM', 'target': 'https://www.tryhackme.com/', 'severity_score': 5.0,  ... (1282 characters truncated) ... datetime.datetime(2026, 1, 18, 7, 2, 28, 520528)}, 'id': 'scan_700a13339781', 'scan_type': 'URL', 'premium': True, 'threat_count': 5, 'user_ip': None}]]
+2026-01-18 12:32:28,525 - app.core.scanner - INFO - URL scan completed:  scan_700a13339781 - Severity: MEDIUM
+2026-01-18 12:33:05,488 - app.api.routes - INFO - Log scan request: access. log
+2026-01-18 12:33:05,489 - app.core.scanner - INFO - Initiating log scan for access. log (Premium: False)
+2026-01-18 12:33:05,489 - app.services.log_scan - INFO - Starting log analysis for access. log
+2026-01-18 12:33:05,489 - app.services.log_scan - INFO - Processing 1 log lines from access. log
+2026-01-18 12:33:05,490 - app.core.scanner - ERROR - Failed to store scan:  (builtins.TypeError) Object of type datetime is not JSON serializable
+[SQL: INSERT INTO scan_records (id, scan_type, target, premium, threat_count, severity, severity_score, scan_results, created_at, scanned_at, user_ip) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: [{'scanned_at': datetime.datetime(2026, 1, 18, 7, 3, 5, 490079), 'severity': 'LOW', 'target': 'access. log', 'severity_score': 0.0, 'scan_results': {'s ... (321 characters truncated) ... datetime.datetime(2026, 1, 18, 7, 3, 5, 490064)}, 'id': 'scan_dd3aafdb42ee', 'scan_type': 'LOG', 'premium': False, 'threat_count': 0, 'user_ip': None}]]
+2026-01-18 12:33:05,490 - app.core.scanner - INFO - Log scan completed: scan_dd3aafdb42ee - Threats: 0
+2026-01-19 19:36:31,251 - app.api.routes - INFO - URL scan request:  https://www.amazon.com/
+2026-01-19 19:36:31,255 - app.core.scanner - INFO - Initiating URL scan for https://www.amazon.com/ (Premium: False)
+2026-01-19 19:36:31,256 - app.services.url_scan - INFO - Starting passive scan for URL: https://www.amazon.com/
+2026-01-19 19:36:32,667 - httpx - INFO - HTTP Request: HEAD https://www.amazon.com/ "HTTP/1.1 200 OK"
+2026-01-19 19:36:32,679 - app.core.scanner - ERROR - Failed to store scan:  (builtins.TypeError) Object of type datetime is not JSON serializable
+[SQL: INSERT INTO scan_records (id, scan_type, target, premium, threat_count, severity, severity_score, scan_results, created_at, scanned_at, user_ip) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: [{'severity_score': 4.0, 'severity': 'MEDIUM', 'id': 'scan_1e4dbf7e97c3', 'premium': False, 'scanned_at': datetime.datetime(2026, 1, 19, 14, 6, 32, 673 ... (1041 characters truncated) ... er 'X-Content-Type-Options' is not set"], 'premium_insights': None, 'scanned_at': datetime.datetime(2026, 1, 19, 14, 6, 32, 673505)}, 'user_ip': None}]]
+2026-01-19 19:36:32,680 - app.core.scanner - INFO - URL scan completed:  scan_1e4dbf7e97c3 - Severity: MEDIUM
+2026-01-19 19:54:17,505 - app.api.routes - INFO - URL scan request:  https://www.amazon.com/
+2026-01-19 19:54:17,505 - app.core.scanner - INFO - Initiating URL scan for https://www.amazon.com/ (Premium: True)
+2026-01-19 19:54:17,506 - app.services.url_scan - INFO - Starting passive scan for URL: https://www.amazon.com/
+2026-01-19 19:54:18,901 - httpx - INFO - HTTP Request: HEAD https://www.amazon.com/ "HTTP/1.1 200 OK"
+2026-01-19 19:54:18,908 - app.core.scanner - ERROR - Failed to store scan:  (builtins.TypeError) Object of type datetime is not JSON serializable
+[SQL: INSERT INTO scan_records (id, scan_type, target, premium, threat_count, severity, severity_score, scan_results, created_at, scanned_at, user_ip) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: [{'severity_score': 4.0, 'severity': 'MEDIUM', 'id': 'scan_eede2e3dcb19', 'premium': True, 'scanned_at': datetime.datetime(2026, 1, 19, 14, 24, 18, 903 ... (1255 characters truncated) ...  to attackers. Consider disabling or masking the Server header.'], 'scanned_at': datetime.datetime(2026, 1, 19, 14, 24, 18, 903018)}, 'user_ip': None}]]
+2026-01-19 19:54:18,909 - app.core.scanner - INFO - URL scan completed:  scan_eede2e3dcb19 - Severity: MEDIUM
+2026-01-19 20:00:18,746 - app.api.routes - INFO - Log scan request: serverlog.log
+2026-01-19 20:00:18,746 - app.core.scanner - INFO - Initiating log scan for serverlog.log (Premium: True)
+2026-01-19 20:00:18,747 - app.services.log_scan - INFO - Starting log analysis for serverlog.log
+2026-01-19 20:00:18,747 - app.services.log_scan - INFO - Processing 29 log lines from serverlog.log
+2026-01-19 20:00:18,813 - app.core.scanner - INFO - Log scan completed: scan_4f91bca140f2 - Threats: 8
+2026-01-19 20:35:20,349 - app.api.routes - INFO - URL scan request:  http://www.tryhackme.com/
+2026-01-19 20:35:20,349 - app.core.scanner - INFO - Initiating URL scan for http://www.tryhackme.com/ (Premium: True)
+2026-01-19 20:35:20,349 - app.services.url_scan - INFO - Starting passive scan for URL: http://www.tryhackme.com/
+2026-01-19 20:35:21,183 - httpx - INFO - HTTP Request: HEAD http://www.tryhackme.com/ "HTTP/1.1 301 Moved Permanently"
+2026-01-19 20:35:21,758 - httpx - INFO - HTTP Request: HEAD https://tryhackme.com/ "HTTP/1.1 202 Accepted"
+2026-01-19 20:35:21,760 - app.core.scanner - ERROR - Failed to store scan:  (builtins.TypeError) Object of type datetime is not JSON serializable
+[SQL: INSERT INTO scan_records (id, scan_type, target, premium, threat_count, severity, severity_score, scan_results, created_at, scanned_at, user_ip) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: [{'severity_score': 6.0, 'severity': 'MEDIUM', 'id': 'scan_a481ff22de9f', 'premium': True, 'scanned_at': datetime.datetime(2026, 1, 19, 15, 5, 21, 7594 ... (1405 characters truncated) ... e to attackers. Consider disabling or masking the Server header.'], 'scanned_at': datetime.datetime(2026, 1, 19, 15, 5, 21, 759380)}, 'user_ip': None}]]
+2026-01-19 20:35:21,760 - app.core.scanner - INFO - URL scan completed:  scan_a481ff22de9f - Severity: MEDIUM
+2026-01-19 21:19:05,635 - app.api.routes - INFO - URL scan request:  https://www.persevex.com/
+2026-01-19 21:19:05,635 - app.core.scanner - INFO - Initiating URL scan for https://www.persevex.com/ (Premium: True)
+2026-01-19 21:19:05,635 - app.services.url_scan - INFO - Starting passive scan for URL: https://www.persevex.com/
+2026-01-19 21:19:06,463 - httpx - INFO - HTTP Request: HEAD https://www.persevex.com/ "HTTP/1.1 200 OK"
+2026-01-19 21:19:06,465 - app.core.scanner - ERROR - Failed to store scan:  (builtins.TypeError) Object of type datetime is not JSON serializable
+[SQL: INSERT INTO scan_records (id, scan_type, target, premium, threat_count, severity, severity_score, scan_results, created_at, scanned_at, user_ip) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: [{'severity_score': 4.0, 'scan_results': {'scan_id': 'scan_5e083d84832d', 'target_url': 'https://www.persevex.com/', 'https_enabled': True, 'status_cod ... (1229 characters truncated) ... 464593), 'severity': 'MEDIUM', 'target': 'https://www.persevex.com/', 'id': 'scan_5e083d84832d', 'premium': True, 'scan_type': 'URL', 'user_ip': None}]]
+2026-01-19 21:19:06,466 - app.core.scanner - INFO - URL scan completed:  scan_5e083d84832d - Severity: MEDIUM
+2026-01-19 21:20:21,964 - app.api.routes - INFO - URL scan request:  https://www.facebook.com/
+2026-01-19 21:20:21,965 - app.core.scanner - INFO - Initiating URL scan for https://www.facebook.com/ (Premium: True)
+2026-01-19 21:20:21,965 - app.services.url_scan - INFO - Starting passive scan for URL: https://www.facebook.com/
+2026-01-19 21:20:22,930 - httpx - INFO - HTTP Request: HEAD https://www.facebook.com/ "HTTP/1.1 200 OK"
+2026-01-19 21:20:22,932 - app.core.scanner - ERROR - Failed to store scan:  (builtins.TypeError) Object of type datetime is not JSON serializable
+[SQL: INSERT INTO scan_records (id, scan_type, target, premium, threat_count, severity, severity_score, scan_results, created_at, scanned_at, user_ip) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: [{'severity_score': 0.0, 'scan_results': {'scan_id': 'scan_efd162f83886', 'target_url': 'https://www.facebook.com/', 'https_enabled': True, 'status_cod ... (3010 characters truncated) ... 2, 931336), 'severity': 'LOW', 'target': 'https://www.facebook.com/', 'id': 'scan_efd162f83886', 'premium': True, 'scan_type': 'URL', 'user_ip': None}]]
+2026-01-19 21:20:22,932 - app.core.scanner - INFO - URL scan completed:  scan_efd162f83886 - Severity: LOW
+2026-01-19 21:22:21,166 - app.api.routes - INFO - Log scan request: pasted_log.txt
+2026-01-19 21:22:21,166 - app.core.scanner - INFO - Initiating log scan for pasted_log.txt (Premium: True)
+2026-01-19 21:22:21,166 - app.services.log_scan - INFO - Starting log analysis for pasted_log.txt
+2026-01-19 21:22:21,167 - app.services.log_scan - INFO - Processing 21 log lines from pasted_log.txt
+2026-01-19 21:22:21,168 - app.core.scanner - ERROR - Failed to store scan:  (builtins.TypeError) Object of type datetime is not JSON serializable
+[SQL: INSERT INTO scan_records (id, scan_type, target, premium, threat_count, severity, severity_score, scan_results, created_at, scanned_at, user_ip) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: [{'severity_score': 6.333333333333333, 'scan_results': {'scan_id': 'scan_b50bb1d869d4', 'filename': 'pasted_log.txt', 'total_lines': 21, 'threat_count' ... (8530 characters truncated) ... 5, 52, 21, 167977), 'severity': 'MEDIUM', 'target': 'pasted_log.txt', 'id': 'scan_b50bb1d869d4', 'premium': True, 'scan_type': 'LOG', 'user_ip': None}]]
+2026-01-19 21:22:21,168 - app.core.scanner - INFO - Log scan completed: scan_b50bb1d869d4 - Threats: 15
+2026-01-19 21:23:05,177 - app.api.routes - INFO - Log scan request: localtest
+2026-01-19 21:23:05,178 - app.core.scanner - INFO - Initiating log scan for localtest (Premium: True)
+2026-01-19 21:23:05,178 - app.services.log_scan - INFO - Starting log analysis for localtest
+2026-01-19 21:23:05,178 - app.services.log_scan - INFO - Processing 21 log lines from localtest
+2026-01-19 21:23:05,179 - app.core.scanner - ERROR - Failed to store scan:  (builtins.TypeError) Object of type datetime is not JSON serializable
+[SQL: INSERT INTO scan_records (id, scan_type, target, premium, threat_count, severity, severity_score, scan_results, created_at, scanned_at, user_ip) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: [{'severity_score': 6.333333333333333, 'scan_results': {'scan_id': 'scan_45753f3824f5', 'filename': 'localtest', 'total_lines': 21, 'threat_count': 15, ... (8518 characters truncated) ...  19, 15, 53, 5, 179289), 'severity': 'MEDIUM', 'target': 'localtest', 'id': 'scan_45753f3824f5', 'premium': True, 'scan_type': 'LOG', 'user_ip': None}]]
+2026-01-19 21:23:05,180 - app.core.scanner - INFO - Log scan completed: scan_45753f3824f5 - Threats: 15
