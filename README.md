@@ -197,7 +197,6 @@ http://localhost:3000
 **Debargha Naskar**  
 - AI Assistants: **ChatGPT, Github Copilot**
 - GitHub: https://github.com/Naruto-cyber13  
-- Email: your-email@example.com  
 - Project Repository: https://github.com/Naruto-cyber13/VulnScan  
 
 ---
